@@ -1,0 +1,43 @@
+package be.acq.metier;
+
+import be.acq.clavier.Clavier;
+import be.acq.pojo.Responsable;
+
+public class M_Responsable {
+	public Responsable r;
+	public M_Responsable(Responsable r) {
+		this.r = r;
+	}
+	
+	public void menuResponsable() {
+		int choix;
+		do {
+			System.out.println("**MENU RESPONSABLE**");
+			System.out.println("Que voulez-vous faire?");
+			System.out.println("1. Ajouter une balade");
+			System.out.println("2. Modifier une balade");
+			System.out.println("3. Supprimer une balade");
+			System.out.println("0. Quitter");
+			System.out.print("Votre choix : ");
+			choix = Clavier.lireInt();
+			while (choix <0 || choix >3) {
+				System.out.println("Choix non valide");
+				System.out.print("Votre choix : ");
+				choix = Clavier.lireInt();
+			}
+			switch(choix) {
+				case 1:
+					break;
+				case 2:
+					break;
+				case 3:
+					break;
+				case 0:
+					M_Personne mP = new M_Personne();
+					
+					break;
+			}
+		}
+		while(choix!=0);
+	}
+}

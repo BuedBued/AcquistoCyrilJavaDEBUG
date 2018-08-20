@@ -1,0 +1,12 @@
+1531576188467	Encapsulate field 'nom'
+1531576197845	Encapsulate field 'prenom'
+1531576203924	Encapsulate field 'dateNaissance'
+1531576208281	Encapsulate field 'rue'
+1531576212321	Encapsulate field 'CP'
+1531576220601	Encapsulate field 'num'
+1531576226703	Encapsulate field 'localite'
+1531576234028	Encapsulate field 'tel'
+1531576240273	Encapsulate field 'mail'
+1531576247104	Encapsulate field 'mdp'
+1531577216110	Encapsulate field 'personneID'
+1531577289385	Delete element

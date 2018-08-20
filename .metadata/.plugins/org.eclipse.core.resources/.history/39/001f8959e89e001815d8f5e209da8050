@@ -1,0 +1,51 @@
+package be.acq.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import be.acq.pojo.Vehicule;
+
+public class DAO_Vehicule extends DAO<Vehicule> {
+	public DAO_Vehicule(Connection con) {
+		super(con);
+	}
+
+	@Override
+	public boolean create(Vehicule obj, int idBalade) {
+		boolean b = false;
+		PreparedStatement stmt = null;
+		try {
+			stmt = connect.prepareStatement("INSERT INTO Covoiturage (idConducteur, idBalade, maxPlace) VALUES (?,?,?)");
+			stmt.setInt(1, obj.getConducteur().getIDPersonne());
+			stmt.setInt(2, idBalade);
+			//Execution de la commande SQL
+			stmt.executeUpdate();
+			b = true;
+		}
+		catch(SQLException e) {
+			e.printStackTrace();
+		}
+		return b;
+	}
+
+	@Override
+	public boolean delete(Vehicule obj) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean update(Vehicule obj) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public Vehicule select(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+
+}

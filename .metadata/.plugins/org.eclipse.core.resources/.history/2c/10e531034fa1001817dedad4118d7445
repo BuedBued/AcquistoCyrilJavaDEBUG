@@ -1,0 +1,9 @@
+package be.acq.metier;
+
+public class M_Tresorier {
+	public Tresorier t;
+	public M_Tresorier(Tresorier t) {
+		this.t = t;
+	}
+
+}

@@ -1,0 +1,62 @@
+package be.acq.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import be.acq.pojo.Membre;
+
+public class DAO_Membre extends DAO<Membre>{
+	public DAO_Membre(Connection con) {
+		super(con);
+	}
+
+	@Override
+	public boolean create(Membre obj) {
+		boolean b = false;
+		PreparedStatement stmt = null;
+		try {
+			stmt = connect.prepareStatement("INSERT INTO Membre (idPersonne,solde) VALUES (?,?)");
+			stmt.setInt(1, obj.getIDPersonne());
+			stmt.setDouble(2, obj.getSolde());
+			//Execution de la commande SQL
+			stmt.executeUpdate();
+			b = true;
+		}
+		catch(SQLException e) {
+			e.printStackTrace();
+		}
+		return b;
+	}
+
+	@Override
+	public boolean delete(Membre obj) {
+		boolean b = false;
+		PreparedStatement stmt = null;
+		try {
+			//Preparation de la commande SQL
+			stmt = connect.prepareStatement("DELETE FROM Membre WHERE idMembre = ?");
+			stmt.setInt(1, obj.getIDMembre());
+			//Execution de la commande SQL
+			stmt.executeUpdate();
+			b = true;
+		}
+		catch(SQLException e) {
+			e.printStackTrace();
+		}
+		return b;
+	}
+
+	@Override
+	public boolean update(Membre obj) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public Membre select(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

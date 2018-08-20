@@ -1,0 +1,32 @@
+package be.acq.dao;
+
+public class DAO_Descente extends DAO<> {
+	public DAO_Descente(Connection con) {
+		super(con);
+	}
+
+	@Override
+	public boolean create(Descente obj) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean delete(Descente obj) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean update(Descente obj) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public Descente select(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

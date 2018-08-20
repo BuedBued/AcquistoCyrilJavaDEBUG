@@ -1,0 +1,8 @@
+package be.acq.dao;
+
+public class DAO_Descendeur extends DAO<Descendeur> {
+	public DAO_Descendeur(Connection con) {
+		super(con);
+	}
+
+}

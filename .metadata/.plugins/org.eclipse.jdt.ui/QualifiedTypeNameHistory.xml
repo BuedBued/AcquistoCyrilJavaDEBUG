@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.io.Serializable"/>
+<fullyQualifiedTypeName name="java.sql.DriverManager"/>
+<fullyQualifiedTypeName name="be.acq.pojo.Personne"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="be.acq.pojo.Descendeur"/>
+<fullyQualifiedTypeName name="java.sql.Date"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="be.acq.pojo.Responsable"/>
+<fullyQualifiedTypeName name="be.acq.pojo.Categorie"/>
+<fullyQualifiedTypeName name="be.acq.dao.DAO_Balade"/>
+<fullyQualifiedTypeName name="be.acq.pojo.Calendrier"/>
+<fullyQualifiedTypeName name="be.acq.pojo.Balade"/>
+<fullyQualifiedTypeName name="be.acq.dao.DAO_Vehicule"/>
+<fullyQualifiedTypeName name="be.acq.pojo.Vehicule"/>
+<fullyQualifiedTypeName name="be.acq.dao.DAO_Categorie"/>
+<fullyQualifiedTypeName name="be.acq.pojo.Tresorier"/>
+<fullyQualifiedTypeName name="be.acq.clavier.Clavier"/>
+<fullyQualifiedTypeName name="be.acq.dao.DBConnection"/>
+<fullyQualifiedTypeName name="be.acq.dao.DAO_Membre"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="be.acq.pojo.Membre"/>
+</qualifiedTypeNameHistroy>

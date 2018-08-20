@@ -1,0 +1,10 @@
+package be.acq.dao;
+
+import be.acq.pojo.Vehicule;
+
+public class DAO_Vehicule extends DAO<Vehicule> {
+	public DAO_Vehicule(Connection con) {
+		super(con);
+	}
+
+}

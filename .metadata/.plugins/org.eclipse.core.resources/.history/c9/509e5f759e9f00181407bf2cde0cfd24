@@ -1,0 +1,14 @@
+package be.acq.metier;
+
+import be.acq.pojo.Responsable;
+
+public class M_Responsable {
+	public Responsable r;
+	public M_Responsable(Responsable r) {
+		this.r = r;
+	}
+	
+	public void menuResponsable() {
+		
+	}
+}

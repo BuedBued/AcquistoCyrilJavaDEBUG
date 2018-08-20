@@ -1,0 +1,8 @@
+package be.acq.metier;
+
+public class M_Responsable {
+	public Responsable r;
+	public M_Responsable(Responsable r) {
+		this.r = r;
+	}
+}

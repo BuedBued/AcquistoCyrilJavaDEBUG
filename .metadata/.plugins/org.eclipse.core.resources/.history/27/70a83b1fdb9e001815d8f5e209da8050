@@ -1,0 +1,34 @@
+package be.acq.dao;
+import be.acq.pojo.*;
+import java.sql.Connection;
+
+public class DAO_Trialiste extends DAO<Trialiste> {
+	public DAO_Trialiste(Connection con) {
+		super(con);
+	}
+
+	@Override
+	public boolean create(Trialiste obj) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean delete(Trialiste obj) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean update(Trialiste obj) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public Trialiste select(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

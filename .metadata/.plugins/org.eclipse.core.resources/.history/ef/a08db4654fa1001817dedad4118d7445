@@ -1,0 +1,16 @@
+package be.acq.metier;
+
+import be.acq.pojo.Tresorier;
+
+public class M_Tresorier {
+	public Tresorier t;
+	public M_Tresorier(Tresorier t) {
+		this.t = t;
+	}
+	
+	public void menuTresorier() {
+		System.out.println("**MENU TRESORIER**");
+		System.out.println("");
+	}
+
+}

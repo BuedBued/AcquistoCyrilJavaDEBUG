@@ -1,0 +1,8 @@
+package be.acq.dao;
+
+public class DAO_Trialiste extends DAO<Trialiste> {
+	public DAO_Trialiste(Connection con) {
+		super(con);
+	}
+
+}

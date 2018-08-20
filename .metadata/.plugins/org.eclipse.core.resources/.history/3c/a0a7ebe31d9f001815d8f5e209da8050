@@ -1,0 +1,51 @@
+package be.acq.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+
+import be.acq.pojo.*;
+
+public class DAO_Categorie extends DAO<Categorie> {
+
+	public DAO_Categorie(Connection con) {
+		super(con);
+	}
+
+	@Override
+	public boolean create(Categorie obj) { //Non utilisé
+		return false;
+	}
+
+	@Override
+	public boolean delete(Categorie obj) { //Non utilisé
+		return false;
+	}
+
+	@Override
+	public boolean update(Categorie obj) { //Non utilisé
+		return false;
+	}
+
+	@Override
+	public Categorie select(int id) { //[DEBUG] Non utilisé [Je crois]
+		return null;
+	}
+	
+	public ArrayList<Categorie> selectAllCategories(int idMembre){
+		ArrayList<Categorie> listCat = new ArrayList<Categorie>();
+		PreparedStatement stmt = null;
+		ResultSet res = null;
+		try{
+			stmt = connect.prepareStatement("SELECT * FROM LigneCategorie WHERE idMembre = ?",
+					ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_READ_ONLY);
+			stmt.setInt(1, idMembre);
+		}
+		catch(SQLException e){
+			e.printStackTrace();
+		}
+		return listCat
+	}
+}
